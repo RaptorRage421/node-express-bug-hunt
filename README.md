@@ -50,7 +50,8 @@ quotesFromServer is not iterable. This is because the data being sent is an Obje
 making this an Array resolves this bug. 
 
 ### Bug 5
-
+Attempting to Submit a new Quote. The console log shows that we are entering the submitForm function, but there is an error. getQuote is not defined.  This is a typo on a call to the getQuotes() function. <br>
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.24.39 PM.png>)![alt text](<server/public/images/Screenshot 2024-05-13 at 9.26.50 PM.png>)
 
 
 

@@ -49,7 +49,7 @@ function submitForm(event) {
         data: quoteForServer
     }).then((response) => {
         console.log(response);
-        getQuote();
+        getQuotes();
     }).catch((error) => {
         console.log(error);
         alert('Something went wrong.');
