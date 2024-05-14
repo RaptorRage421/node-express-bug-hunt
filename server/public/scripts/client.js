@@ -13,7 +13,7 @@ function getQuotes() {
         let quotesFromServer = response.data;
         let contentDiv = document.querySelector('#content');
         contentDiv.innerHTML = '';
-        let i = 0;
+        // let i = 0;
         // ??? Loop over array of quotes and append to the content div
         for(let quote of quotesFromServer) {
             contentDiv.innerHTML += `
@@ -21,7 +21,7 @@ function getQuotes() {
                     "${quote.text}" -${quote.author}
                 </p>
             `;
-            i += 1;
+            // i += 1;
         }
     }).catch((error) => {
         console.log(error);
@@ -42,13 +42,14 @@ function submitForm(event) {
         text: quote,
         author: author,
     };
+    
     // ???
     axios({
         method: 'POST',
         url: '/quotes', 
         data: quoteForServer
     }).then((response) => {
-        console.log(response);
+        // console.log(response);
         getQuotes();
     }).catch((error) => {
         console.log(error);

@@ -61,12 +61,20 @@ client.js line 52: switch `getQuote()` to `getQuotes()`<br>
 Attempting to Submit a new Quote. The console log shows that we are entering the submitForm function, but there is an error. getQuote is not defined.  This is a typo on a call to the getQuotes() function. <br>
 ![alt text](<server/public/images/Screenshot 2024-05-13 at 9.24.39 PM.png>)![alt text](<server/public/images/Screenshot 2024-05-13 at 9.26.50 PM.png>)
 
+### Bug 7
+client.js Line 16: `let i=0;` i is not needed in this loop, because it is written as a for of loop, so this code is doing nothing. 
+client.js Line 24: `i+=1` again this code does not have 
 
+### Bug 8
+quote.router.js Line 21: `quotesList.push(quoteToAdd)`, the storage locations is `quoteList` simply remove the 's'
 
-
+### Bug 9
+server.js line 17. `app.use(express.static('public'))` this needs to be changed to `app.use(express.static('server/public'))`<br>
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.59.21 PM.png>)
 
 ## Extra Practice (Optional)
 
 Complete the JS debugging exercises at:
 
 - https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/exercises.html
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.59.27 PM.png>)
