@@ -26,7 +26,10 @@ Fixed `quote.router.js` line 28: switch `app` to `router`. _This is the solution
 
 ### Bug 1
 
-...
+quote.router.js did not have a `module.exports = router` which was not allowing the module to be required on the server.js as intended. 
+
+### Bug 2
+
 
 ## Extra Practice (Optional)
 
