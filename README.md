@@ -57,8 +57,8 @@ quotesFromServer is not iterable. This is because the data being sent is an Obje
 making this an Array resolves this bug. 
 
 ## Bug 6
-quote.router.js Line 21: `quotesList.push(quoteToAdd)`, the storage locations is `quoteList` simply remove the 's'
-
+quote.router.js Line 21: `quotesList.push(quoteToAdd)`, the storage locations is `quoteList` simply remove the 's'<br>
+![alt text](<server/public/images/Screenshot 2024-05-13 at 11.06.11 PM.png>)
 
 ## Bug 7
 client.js line 52: switch `getQuote()` to `getQuotes()`<br>

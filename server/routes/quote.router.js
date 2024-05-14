@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
     console.log('POST Request made for /quotes');
     // Any data we send from the client is available
     // as a property of req.body.
-    console.log(req.body);
+    console.log("hello" ,req.body);
     let quoteToAdd = req.body;
     quoteList.push(quoteToAdd);
     res.sendStatus(201);

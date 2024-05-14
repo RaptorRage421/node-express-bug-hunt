@@ -8,12 +8,12 @@ function getQuotes() {
     }).then((response) => {
         // Code that will run on successful response
         // from the server.
-        console.log(response);
+        console.log("hi",response);
         // quotesFromServer will be an Array of quotes
         let quotesFromServer = response.data;
         let contentDiv = document.querySelector('#content');
         contentDiv.innerHTML = '';
-        // let i = 0;
+        let i = 0;
         // ??? Loop over array of quotes and append to the content div
         for(let quote of quotesFromServer) {
             contentDiv.innerHTML += `
@@ -21,7 +21,7 @@ function getQuotes() {
                     "${quote.text}" -${quote.author}
                 </p>
             `;
-            // i += 1;
+            i += 1;
         }
     }).catch((error) => {
         console.log(error);
