@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // ??? List of quotes
-const quoteList = {};
+let quoteList = [];
 
 // ??? GET request returns information
 router.get('/', (req, res) => {
@@ -18,12 +18,11 @@ router.post('/', (req, res) => {
     // as a property of req.body.
     console.log(req.body);
     let quoteToAdd = req.body;
-    quotesList.push(quoteToAdd);
+    quoteList.push(quoteToAdd);
     res.sendStatus(201);
 });
 
 // PUT request update information
 
 // ???
-
 module.exports = router
