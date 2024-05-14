@@ -4,7 +4,7 @@ function getQuotes() {
     // Axios GET request (http request for information from the server)
     axios({
         method: 'GET',
-        url: '/quotes}'
+        url: '/quotes'
     }).then((response) => {
         // Code that will run on successful response
         // from the server.

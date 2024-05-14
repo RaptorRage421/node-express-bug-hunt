@@ -30,6 +30,9 @@ quote.router.js did not have a `module.exports = router` which was not allowing 
 
 ### Bug 2
 
+![alt text](<server/public/images/Screenshot 2024-05-13 at 8.48.34 PM.png>)<br>
+![alt text](<server/public/images/Screenshot 2024-05-13 at 8.48.42 PM.png>)<br>![alt text](<server/public/images/Screenshot 2024-05-13 at 9.05.09 PM.png>)<br>
+url in the Axios call in client.js function getQuotes() was entered incorrectly with a curly bracket at the end. removing this allows the call to happen. <br>
 
 ## Extra Practice (Optional)
 
