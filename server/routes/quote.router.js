@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // ??? List of quotes
-const quoteList = [{}];
+const quoteList = []
 
 // ??? GET request returns information
 router.get('/', (req, res) => {

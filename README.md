@@ -34,6 +34,28 @@ quote.router.js did not have a `module.exports = router` which was not allowing 
 ![alt text](<server/public/images/Screenshot 2024-05-13 at 8.48.42 PM.png>)<br>![alt text](<server/public/images/Screenshot 2024-05-13 at 9.05.09 PM.png>)<br>
 url in the Axios call in client.js function getQuotes() was entered incorrectly with a curly bracket at the end. removing this allows the call to happen. <br>
 
+### Bug 3
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.10.16 PM.png>)<br>
+The app.use route is set to /quotes<br>
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.13.11 PM.png>)<br>
+AND the quote.router.js `router.get` is also currently set to /quotes<br>
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.13.23 PM.png>)<br>
+This makes it look for /quotes/quotes which doesn't exist. Removing the quotes from the quote.router.js file route will get this to function correctly.
+
+### Bug 4
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.18.10 PM.png>)<br>
+GET throws an error.  <br>
+![alt text](<server/public/images/Screenshot 2024-05-13 at 9.18.26 PM.png>)<br>
+quotesFromServer is not iterable. This is because the data being sent is an Object and not an Array. <br>![alt text](<server/public/images/Screenshot 2024-05-13 at 9.18.34 PM.png>)<br>
+making this an Array resolves this bug. 
+
+### Bug 5
+
+
+
+
+
+
 ## Extra Practice (Optional)
 
 Complete the JS debugging exercises at:
