@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 // Heroku assigns us a unique PORT
 // Use 5001 for localhost development
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5007;
 const quoteRouter = require('./routes/quote.router');
 
 // Allow req.body

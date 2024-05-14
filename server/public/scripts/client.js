@@ -42,14 +42,13 @@ function submitForm(event) {
         text: quote,
         author: author,
     };
-    
     // ???
     axios({
         method: 'POST',
         url: '/quotes', 
         data: quoteForServer
     }).then((response) => {
-        // console.log(response);
+        console.log(response);
         getQuotes();
     }).catch((error) => {
         console.log(error);
