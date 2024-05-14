@@ -80,4 +80,3 @@ client.js Line 24: `i+=1` again this code does not provide any functionality.
 Complete the JS debugging exercises at:
 
 - https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/exercises.html
-![alt text](<server/public/images/Screenshot 2024-05-13 at 9.59.27 PM.png>)
